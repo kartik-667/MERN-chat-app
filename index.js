@@ -5,8 +5,8 @@ const app=express()
 app.use(cors())
 dotenv.config()
 app.use(express.json())
-
-
+const connectdb=require('./config/db')
+connectdb()
 const port=process.env.PORT || 8000
 
 app.get("/",(req,res)=>{
