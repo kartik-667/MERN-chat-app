@@ -53,15 +53,15 @@ const Home = () => {
         <form  action="" className='form border-black p-4 m-4 flex flex-col' >
           <h1 className='text-4xl mb-4'>Login here</h1>
           <label htmlFor="name">Name:</label>
-          <input onChange={(e)=> setname(e.target.value)} value={name}  className='text-black'  type="text" name="" id="name" placeholder='enter name here' />
+          <input onChange={(e)=> setname(e.target.value)} value={name}  className='text-black'  type="text" name="name" id="name" placeholder='enter name here' />
 
           <label htmlFor="email">Email:</label>
-          <input onChange={(e)=> setmail(e.target.value)} value={mail} type="email" name="" id="email" placeholder='user@abc.com' />
+          <input onChange={(e)=> setmail(e.target.value)} value={mail} type="email" name="email" id="email" placeholder='user@abc.com' />
           <div>
 
           <label htmlFor="password">Password</label>
           <br />
-          <input onChange={(e)=> setpass(e.target.value)} value={pass} type={showpass ? "text" :"password"} name="" id="password" placeholder='*****' />
+          <input onChange={(e)=> setpass(e.target.value)} value={pass} type={showpass ? "text" :"password"} name="password" id="password" placeholder='*****' />
           <button className="border-2" onClick={(e)=> handleclick(e)}>Show Password</button>
           </div>
 
